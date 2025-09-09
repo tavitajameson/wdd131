@@ -1,0 +1,126 @@
+/* Fonts & Base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #690a0a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+header .highlight {
+    color: #8e8d89;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    color: #8e8d89;
+    border-bottom: 2px solid #8e8d89;
+}
+
+/* Main Layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background: #690a0a;
+    color: white;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.75rem;
+    border-radius: 8px 8px 0 0;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.about-content img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.nba {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nba img {
+    max-width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Resources */
+.resources ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
+
+.resources a {
+    color: #690a0a;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #690a0a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #8e8d89;
+}
