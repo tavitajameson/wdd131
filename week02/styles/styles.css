@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+input,
+button {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+ul li {
+    margin-top: 0.5rem;
+}
+
+button.delete {
+    margin-left: 1rem;
+    cursor: pointer;
+}
