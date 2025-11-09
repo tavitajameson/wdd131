@@ -107,6 +107,7 @@ body {
     font-size: 1.25rem;
     margin: 0 0 1rem;
     color: var(--accent);
+    text-align: center;
 }
 
 .gallery {
