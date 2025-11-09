@@ -1,8 +1,8 @@
 :root {
     --bg: #ffffff;
-    --panel: #f7faf6;
-    --accent: #00695c;
-    --muted: #565555;
+    --panel: #f4f7f5;
+    --accent: #005247;
+    --muted: #4a4a4a;
     --max-width: 1000px;
     --gap: 1rem;
     --radius: 12px;
