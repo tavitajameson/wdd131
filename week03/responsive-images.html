@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Image Art Direction</h1>
+    </header>
+
+    <main>
+        <div class="temple">
+            <picture>
+                <source srcset="images/temple-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/temple-medium.webp" media="(min-width: 500px)">
+                <img src="images/temple-small.webp" alt="Temple exterior surrounded by gardens and blue sky" width="1500"
+                    height="750">
+            </picture>
+        </div>
+
+        <section>
+            <h2>About This Example</h2>
+            <p>
+                This responsive image example uses the <code>&lt;picture&gt;</code> element
+                and <code>srcset</code> to serve the most appropriate image based on
+                screen width. The images are cropped differently to direct user focus
+                (art direction) and optimized for clarity and performance.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Responsive Image Activity – WDD131</p>
+    </footer>
+</body>
+
+</html>
