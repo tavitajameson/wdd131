@@ -1,7 +1,7 @@
 :root {
     --primary: #0f3fa8;
     --accent: #d60000;
-    --light: #ffffff;
+    --light: #c2ac6e;
     --dark: #222;
     --spacing: 1rem;
     --max-width: 900px;
@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     color: var(--dark);
     background: var(--light);
 }
@@ -21,16 +21,28 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-family: 'Rye', cursive;
+    font-size: 2.5rem;
+}
+
 .hero img {
     width: 100%;
     display: block;
+    border: 6px solid var(--light);
+    border-radius: 12px;
 }
 
 .weather {
     padding: var(--spacing);
     max-width: var(--max-width);
-    margin: auto;
+    margin: 2rem auto 0;
     position: relative;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    border-radius: 12px;
+    font-family: 'Rye', cursive;
 }
 
 .weather-heading {
@@ -60,8 +72,13 @@ header {
 
 .data {
     max-width: var(--max-width);
-    margin: auto;
+    margin: 2rem auto;
     padding: var(--spacing);
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    border-radius: 12px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 footer {
@@ -70,4 +87,5 @@ footer {
     background: var(--accent);
     color: white;
     margin-top: 2rem;
+    font-family: 'Rye', cursive;
 }
