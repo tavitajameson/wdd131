@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
             dedicated: "1998, June, 7",
             area: 68890,
             imageUrl: "https://www.churchofjesuschrist.org/media/image/preston-england-temple-flowers-ff0af54?lang=eng"
+        },
+        
         {
             templeName: "Tokyo Japan",
             location: "Tokyo, Japan",
