@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Tokyo, Japan",
             dedicated: "1980, October, 18",
             area: 52590,
-            imageUrl: "https://churchofjesuschrist.org/imgs/4f1313d912b16ff535921025812d2332ca0f8e99/full/500%2C/0/default"
+            imageUrl: "https://www.churchofjesuschrist.org/imgs/0b6461093b5abb78869c2fc094f0dcd6b492fce2/full/500%2C/0/default"
         }
     ];
 
