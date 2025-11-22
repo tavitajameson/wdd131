@@ -65,14 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Rome, Italy",
             dedicated: "2019, March, 10",
             area: 41000,
-            imageUrl: "https://www.churchofjesuschrist.org/media/image/rome-italy-temple-08d5a9e?lang=eng"
+            imageUrl: "https://churchofjesuschrist.org/imgs/de2a4c6582ecb02ed4177b13f513dacba7d9fb15/full/500%2C/0/default"
         },
         {
             templeName: "Preston England",
             location: "Preston, England",
             dedicated: "1998, June, 7",
             area: 68890,
-            imageUrl: "https://www.churchofjesuschrist.org/media/image/preston-england-temple-flowers-ff0af54?lang=eng"
+            imageUrl: "https://www.churchofjesuschrist.org/imgs/a68695910157ca975763cf0a7b321d5462b1d1d9/full/500%2C/0/default"
         },
         
         {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Tokyo, Japan",
             dedicated: "1980, October, 18",
             area: 52590,
-            imageUrl: "https://www.churchofjesuschrist.org/imgs/f36ff27e1c9f11ecac0eeeeeac1e10ba7fe5b940/full/1920%2C/0/default"
+            imageUrl: "https://churchofjesuschrist.org/imgs/4f1313d912b16ff535921025812d2332ca0f8e99/full/500%2C/0/default"
         }
     ];
 
