@@ -1,0 +1,179 @@
+:root {
+    --bg: #ffffff;
+    --panel: #f4f7f5;
+    --accent: #005247;
+    --muted: #4a4a4a;
+    --max-width: 1000px;
+    --gap: 1rem;
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    font-family: "Libre Franklin", system-ui, Arial, sans-serif;
+    color-scheme: light;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #222;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+    background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.header-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand {
+    font-weight: 700;
+    font-family: "Montserrat", "Libre Franklin", sans-serif;
+    font-size: 1.05rem;
+    color: var(--accent);
+    flex: 1 0 auto;
+}
+
+.hamburger {
+    background: transparent;
+    border: 0;
+    font-size: 1.4rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.hamburger:focus {
+    outline: 3px solid rgba(0, 105, 92, 0.15);
+}
+
+.main-nav {
+    display: none;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.main-nav .nav-link {
+    display: block;
+    padding: 0.6rem 0.5rem;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus {
+    background: rgba(0, 105, 92, 0.06);
+    text-decoration: none;
+}
+
+.header-inner .main-nav {
+    background: transparent;
+}
+
+.page-main {
+    max-width: var(--max-width);
+    margin: 1rem auto;
+    padding: 0 1rem 3rem;
+}
+
+.page-main h1 {
+    font-family: "Montserrat", "Libre Franklin", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 1rem;
+    color: var(--accent);
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+    align-items: start;
+}
+
+figure {
+    margin: 0;
+    background: var(--panel);
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-align: left;
+    padding: 0 0.25rem;
+}
+
+.site-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.main-nav.open {
+    display: flex;
+}
+
+a:focus,
+button:focus {
+    outline: 3px solid rgba(0, 105, 92, 0.12);
+    outline-offset: 2px;
+}
+
+@media print {
+
+    .site-header,
+    .site-footer {
+        display: none;
+    }
+}
