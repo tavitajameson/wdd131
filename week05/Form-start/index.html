@@ -48,18 +48,16 @@
 <!-- CONTENT HERE -->
 <main>
     <h1>Course Proposal Application</h1>
-
     <form method="get" action="thanks.html">
         <fieldset>
-            <legend>
-                Applicant Information
-            </legend>
+            <legend>Applicant Information</legend>
             <label>First Name* <input type="text" name="fname" required> </label>
             <label>Last Name* <input type="text" name="lname" required> </label>
             <label>Phone <input type="tel" name="phone" placeholder="1235551234"> </label>
             <label>Email* <input type="email" name="email" placeholder="someone#gmail.com" required> </label>
             <label>Website <input type="url" name="url" placeholder="http://"> </label>
         </fieldset>
+        
         <fieldset>
             <legend>Course Information</legend>
               <div>Audience</div>  
@@ -76,6 +74,30 @@
 
 
         </fieldset>
+
+        <fieldset>
+            <legend>Funding</legend>
+                <label>Anticipated Completion Date <input type="date" name="CompletedDate"></label>
+                <label>Course Subject
+                   <select name="subject"></select>
+                        <option value="">Please Select</option>
+                   <option value="software">Software Development</option>
+                   <option value="creative">Creative Professional</option>
+                   <option value="info">Information Technology</option>
+                   <option value="data">Data Professional</option>
+                   <option value="construction">Construction</option>
+                   <option value="manufacturing">Manufacturing</option>
+                   <option value="business">Business Professional</option>
+                   <option value="security">Cyber Security</option>
+
+                </label>
+
+                <label>How Many Authors <input type="number" name="authors"></label>
+
+
+        </fieldset>
+
+        <input type="submit" value="Propose My Course">
 
     </form>
         
