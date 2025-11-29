@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     products.forEach(p => {
         const opt = document.createElement("option");
-        opt.value = p.name;     
+        opt.value = p.id;
         opt.textContent = p.name;
         productSelect.appendChild(opt);
     });

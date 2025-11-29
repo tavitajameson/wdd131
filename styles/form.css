@@ -14,12 +14,13 @@ footer {
 }
 
 main {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     padding: 1.5rem;
     background: white;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 form {
@@ -30,16 +31,23 @@ form {
 
 label {
     font-weight: bold;
+    display: block;
+}
+
+.req {
+    color: red;
+    margin-left: 4px;
 }
 
 input[type="text"],
 input[type="date"],
 select,
 textarea {
-    padding: .5rem;
+    padding: .55rem;
     border: 1px solid #aaa;
     border-radius: 5px;
     font-size: 1rem;
+    width: 100%;
 }
 
 input[type="submit"],
@@ -59,21 +67,20 @@ input[type="submit"]:hover,
     background: #005fa3;
 }
 
-.rating label {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
 fieldset {
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 5px;
 }
 
+.rating label {
+    display: block;
+    margin-bottom: .4rem;
+}
+
 @media (max-width: 480px) {
     main {
-        margin: 0;
+        margin-top: .5rem;
         border-radius: 0;
     }
 }
