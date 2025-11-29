@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tavita Jameson">
+    <meta name="description" content="This is a form page for a product review. This form will allow you to select a product, rate it between 1-5 stars, and also include other relevant information for your review.">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+
+                <label>
+                    <input type="radio" name="rating" value="1" required>
+                    ☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    ☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    ☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    ☆☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5">
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features (check all that apply)</legend>
+
+                <label><input type="checkbox" name="features" value="Easy Setup"> Easy Setup</label>
+                <label><input type="checkbox" name="features" value="Durable"> Durable</label>
+                <label><input type="checkbox" name="features" value="Energy Efficient"> Energy Efficient</label>
+                <label><input type="checkbox" name="features" value="Compact"> Compact</label>
+            </fieldset>
+
+            <label for="reviewText">Written Review</label>
+            <textarea id="reviewText" name="reviewText" rows="5" placeholder="Write your comments here..."></textarea>
+
+            <label for="userName">Your Name (optional)</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> Tavita Jameson | Utah
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+        <p>Common Assignment Footer Content</p>
+
+</body>
+
+</html>
