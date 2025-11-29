@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tavita Jameson">
-    <meta name="description" content="This is a form page for a product review. This form will allow you to select a product, rate it between 1-5 stars, and also include other relevant information for your review.">
+    <meta name="description" content="This is a form page for a product review. This form will allow you to select a product and rate it with stars and a description.">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/form.js"></script>
@@ -28,30 +28,20 @@
             <fieldset class="rating">
                 <legend>Overall Rating <span class="req">*</span></legend>
 
-                <label for="rate1">
-                    <input type="radio" id="rate1" name="rating" value="1" required>
-                    ☆
-                </label>
+                <input type="radio" id="rate1" name="rating" value="1" required>
+                <label for="rate1">☆</label>
 
-                <label for="rate2">
-                    <input type="radio" id="rate2" name="rating" value="2">
-                    ☆☆
-                </label>
+                <input type="radio" id="rate2" name="rating" value="2">
+                <label for="rate2">☆☆</label>
 
-                <label for="rate3">
-                    <input type="radio" id="rate3" name="rating" value="3">
-                    ☆☆☆
-                </label>
+                <input type="radio" id="rate3" name="rating" value="3">
+                <label for="rate3">☆☆☆</label>
 
-                <label for="rate4">
-                    <input type="radio" id="rate4" name="rating" value="4">
-                    ☆☆☆☆
-                </label>
+                <input type="radio" id="rate4" name="rating" value="4">
+                <label for="rate4">☆☆☆☆</label>
 
-                <label for="rate5">
-                    <input type="radio" id="rate5" name="rating" value="5">
-                    ☆☆☆☆☆
-                </label>
+                <input type="radio" id="rate5" name="rating" value="5">
+                <label for="rate5">☆☆☆☆☆</label>
             </fieldset>
 
             <label for="installDate">Date of Installation <span class="req">*</span></label>
