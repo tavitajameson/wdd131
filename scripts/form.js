@@ -1,7 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-    let count = Number(localStorage.getItem("reviewCounter")) || 0;
-    count++;
-    localStorage.setItem("reviewCounter", count);
+const products = [
+    { id: 1, name: "Galaxy Light 5000" },
+    { id: 2, name: "EcoBreeze Fan" },
+    { id: 3, name: "HydroClean Filter" },
+    { id: 4, name: "SolarMax Charger" }
+];
 
-    document.getElementById("count").textContent = count;
+document.addEventListener("DOMContentLoaded", () => {
+    const productSelect = document.getElementById("product");
+
+    products.forEach(p => {
+        const opt = document.createElement("option");
+        opt.value = p.name;     
+        opt.textContent = p.name;
+        productSelect.appendChild(opt);
+    });
 });
