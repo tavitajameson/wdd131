@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tavita Jameson">
+    <meta name="description"
+        content="NBA Fan Hub – Contact form for NBA fans to send feedback, questions, and league discussions.">
+    <title>NBA Fan Hub – Contact</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 799px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 800px)">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <span class="logo"></span>
+                <h1>NBA Fan Hub</h1>
+            </a>
+
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a class="active" href="form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section class="section">
+                <h2>Contact Us</h2>
+                <p>Have feedback, ideas, or questions about the NBA? Send us a message and we'll get back to you!</p>
+            </section>
+
+            <section class="section">
+                <form id="contactForm">
+
+                    <fieldset>
+                        <legend>Your Information</legend>
+
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="favoriteTeam">Favorite NBA Team:</label>
+                        <select id="favoriteTeam" name="favoriteTeam" required>
+                            <option value="">Select a team…</option>
+                            <option>Atlanta Hawks</option>
+                            <option>Boston Celtics</option>
+                            <option>Brooklyn Nets</option>
+                            <option>Charlotte Hornets</option>
+                            <option>Chicago Bulls</option>
+                            <option>Cleveland Cavaliers</option>
+                            <option>Dallas Mavericks</option>
+                            <option>Denver Nuggets</option>
+                            <option>Detroit Pistons</option>
+                            <option>Golden State Warriors</option>
+                            <option>Houston Rockets</option>
+                            <option>Indiana Pacers</option>
+                            <option>LA Clippers</option>
+                            <option>Los Angeles Lakers</option>
+                            <option>Memphis Grizzlies</option>
+                            <option>Miami Heat</option>
+                            <option>Milwaukee Bucks</option>
+                            <option>Minnesota Timberwolves</option>
+                            <option>New Orleans Pelicans</option>
+                            <option>New York Knicks</option>
+                            <option>Oklahoma City Thunder</option>
+                            <option>Orlando Magic</option>
+                            <option>Philadelphia 76ers</option>
+                            <option>Phoenix Suns</option>
+                            <option>Portland Trail Blazers</option>
+                            <option>Sacramento Kings</option>
+                            <option>San Antonio Spurs</option>
+                            <option>Toronto Raptors</option>
+                            <option>Utah Jazz</option>
+                            <option>Washington Wizards</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Message</legend>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+
+                <p id="formStatus" class="muted"></p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 NBA Fan Hub</p>
+        <a href="siteplan.html">Site Plan</a> ·
+        <a href="references.html">References</a>
+    </footer>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        const statusBox = document.getElementById("formStatus");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const entry = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                favoriteTeam: document.getElementById("favoriteTeam").value,
+                message: document.getElementById("message").value
+            };
+
+            localStorage.setItem("lastContactMessage", JSON.stringify(entry));
+
+            statusBox.textContent = "Thank you! Your message has been submitted.";
+
+            form.reset();
+        });
+    </script>
+
+</body>
+
+</html>
