@@ -1,0 +1,46 @@
+@media screen and (min-width: 800px) {
+    .container {
+        width: 92%;
+    }
+
+    .team-list,
+    .player-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .team-item,
+    .player-card {
+        align-items: flex-start;
+    }
+
+    .team-logo,
+    .player-img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .team-list,
+    .player-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}

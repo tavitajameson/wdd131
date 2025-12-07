@@ -1,0 +1,35 @@
+header .container {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+nav.primary-nav ul {
+    flex-wrap: wrap;
+    gap: .25rem;
+}
+
+
+.team-list,
+.player-list {
+    flex-direction: column;
+}
+
+
+.team-item .team-logo,
+.player-card .player-img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.hero {
+    padding: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(23, 64, 139, 0.03), rgba(201, 8, 46, 0.02));
+}
+
+
+nav.primary-nav a {
+    padding: .6rem .8rem;
+}

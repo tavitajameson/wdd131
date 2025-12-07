@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;600&display=swap');
+
+:root {
+    --primary: #17408B;
+    --accent: #C9082E;
+    --bg: #F5F7FB;
+    --card-bg: #FFFFFF;
+    --text: #0F172A;
+    --muted: #6B7280;
+
+    --radius: 8px;
+    --gap: 1rem;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.45;
+    background: linear-gradient(180deg, rgba(23, 64, 139, 0.06), rgba(201, 8, 46, 0.04));
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 .5rem 0;
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+.container {
+    width: 94%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+
+.site-header {
+    background: var(--primary);
+    padding: .5rem 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+}
+
+.brand h1 {
+    color: white;
+}
+
+.brand .logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    background: white;
+}
+
+nav.primary-nav {
+    margin-left: auto;
+}
+
+nav.primary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: .75rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav.primary-nav a {
+    text-decoration: none;
+    color: white;
+    padding: .45rem .65rem;
+    border-radius: 6px;
+    transition: background .2s ease;
+}
+
+nav.primary-nav a.active,
+nav.primary-nav a:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+
+.section {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 6px 18px rgba(11, 61, 145, 0.04);
+}
+
+.hero {
+    background: linear-gradient(90deg, rgba(23, 64, 139, 0.12), rgba(201, 8, 46, 0.08));
+    border-left: 6px solid var(--primary);
+}
+
